@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import WordCounterPage from './page/wordcounter.tsx'
+import GameCounterPage from './page/gamecounter.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -11,6 +12,8 @@ createRoot(document.getElementById('root')!).render(
     <Routes>
       <Route path='/' element={<App/>}/>
             <Route path='/word-counter' element={<WordCounterPage/>}/>
+                        <Route path='/game-counter' element={<GameCounterPage/>}/>
+
 
       </Routes>
       </BrowserRouter>

@@ -6,7 +6,7 @@ export default function WordCounter(){
     const AlphabetCounts = texts.match(/[a-zA-Z]/g)?.length || 0;
     const spaceCounts = texts.match(/\s/g)?.length || 0;
     const numberCounts = texts.match(/[0-9]/g)?.length || 0;
-    const sentencesCounts = texts.match(/[^.?!]+[.?!]+/g)?.length || 0;
+    const sentencesCounts = texts.match(/[^.?!]+[.?!]+  /g)?.length || 0;
     const paragraphCounts = texts.match(/^(.+?)(\n\s*\n|$)/gm)?.length || 0;
     const characterCounts = texts.match(/./gs)?.length || 0;
 
