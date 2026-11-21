@@ -13,24 +13,20 @@ export default function GameCounters(){
 
     return (
         <>
-        
-        <div className="flex flex-col items-center justify-center min-h-screen bg-slate-200 space-y-7">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-7">
             <div className="">
-                <h1 className="font-extrabold text-center text-4xl">Games Counter</h1>
+                <h1 className="font-extrabold text-center text-4xl text-white">Games Counter</h1>
             </div>
-            <div className="space-y-3  grid grid-cols-2 gap-4">
-                
-
+            <div className="space-y-3  lg:grid grid-cols-2 gap-4">
                 <div className="bg-white h-120 w-120 rounded-xl">
-                    <textarea onChange={(e) => setUsername(e.target.value)} className="resize-none h-120 rounded-xl w-120 p-3" placeholder="Type your username here..."/>
-
+                    <textarea onChange={(e) => setUsername(e.target.value)} className="resize-none bg-zinc-950 border-2 border-gray-700 text-white p-5 h-120 rounded-xl w-120" placeholder="Type your username here..."/>
                 </div>
 
-                <div className="bg-white p-3 w-120 h-120 rounded-xl  ">
-                    <div className="space-y-5 justify-center items-center pt-3">
+                <div className="bg-zinc-950 border-2 border-gray-700 p-5 lg:mb-0 mb-10 w-120 h-120 rounded-xl  ">
+                    <div className="space-y-5 justify-center items-center pt-3 p-5">
                             <div className=" gap-4 flex justify-between items-center">
                             <div className="justify-between flex">
- <a href="" className="font-semibold">Mobile Legends</a>
+ <a href="" className="font-semibold text-white">Mobile Legends</a>
 
                             </div>
 <div className="bg-black w-15 p-1 text-center rounded-xl">
@@ -40,7 +36,7 @@ export default function GameCounters(){
                         </div>
                            <div className=" gap-4 flex justify-between items-center">
                             <div className="justify-between flex">
- <a href="" className="font-semibold">Pubg Mobile</a>
+ <a href="" className="font-semibold text-white">Pubg Mobile</a>
 
                             </div>
 <div className="bg-black w-15 p-1 text-center rounded-xl">
@@ -50,7 +46,7 @@ export default function GameCounters(){
                         </div>
                             <div className=" gap-4 flex justify-between items-center">
                             <div className="justify-between flex">
- <a href="" className="font-semibold">Fortnite</a>
+ <a href="" className="font-semibold text-white">Fortnite</a>
 
                             </div>
 <div className="bg-black w-15 p-1 text-center rounded-xl">
@@ -60,7 +56,7 @@ export default function GameCounters(){
                         </div>
                              <div className=" gap-4 flex justify-between items-center">
                             <div className="justify-between flex">
- <a href="" className="font-semibold">Roblox</a>
+ <a href="" className="font-semibold text-white">Roblox</a>
 
                             </div>
 <div className="bg-black w-15 p-1 text-center rounded-xl">
@@ -71,7 +67,7 @@ export default function GameCounters(){
 
                           <div className=" gap-4 flex justify-between items-center">
                             <div className="justify-between flex">
- <a href="" className="font-semibold">Valorant</a>
+ <a href="" className="font-semibold text-white">Valorant</a>
 
                             </div>
 <div className="bg-black w-15 p-1 text-center rounded-xl">
@@ -82,7 +78,7 @@ export default function GameCounters(){
 
                             <div className=" gap-4 flex justify-between items-center">
                             <div className="justify-between flex">
- <a href="" className="font-semibold">Free Fire</a>
+ <a href="" className="font-semibold text-white">Free Fire</a>
 
                             </div>
 <div className="bg-black w-15 p-1 text-center rounded-xl">
@@ -93,7 +89,7 @@ export default function GameCounters(){
                         
                              <div className=" gap-4 flex justify-between items-center">
                             <div className="justify-between flex">
- <a href="" className="font-semibold">Call Of Duty</a>
+ <a href="" className="font-semibold text-white">Call Of Duty</a>
 
                             </div>
 <div className="bg-black w-15 p-1 text-center rounded-xl">
@@ -104,7 +100,7 @@ export default function GameCounters(){
                         
                                <div className=" gap-4 flex justify-between items-center">
                             <div className="justify-between flex">
- <a href="" className="font-semibold">Point Blank</a>
+ <a href="" className="font-semibold text-white">Point Blank</a>
 
                             </div>
 <div className="bg-black w-15 p-1 text-center rounded-xl">

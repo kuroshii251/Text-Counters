@@ -7,14 +7,14 @@ export default function FacebookCount({tabs, socialmedia}){
     return (
         <>
 
-             <div className={`${tabs === 5 ? "block": "hidden"} bg-white h-100 rounded-xl h-auto`}>
+             <div className={`${tabs === 5 ? "block": "hidden"} bg-zinc-950  border-2 border-gray-500 h-100 rounded-xl h-auto`}>
                             <div className="p-5">
-<h1 className="font-bold text-center text-2xl">Facebook</h1>
+<h1 className="font-bold text-center text-2xl text-white">Facebook</h1>
                             </div>
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Nickname</h1>
+                            <h1 className="font-semibold text-white text-lg">Nickname</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">{Math.min(Facebooknickname, 30)}/30</p>
@@ -23,7 +23,7 @@ export default function FacebookCount({tabs, socialmedia}){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Comments</h1>
+                            <h1 className="font-semibold text-white text-lg">Comments</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">
@@ -34,7 +34,7 @@ export default function FacebookCount({tabs, socialmedia}){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Title</h1>
+                            <h1 className="font-semibold text-white text-lg">Title</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm text-sm w-15 text-center rounded-xl">{Math.min(FacebookTitlePost,200)}/200</p>
@@ -43,17 +43,17 @@ export default function FacebookCount({tabs, socialmedia}){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Description</h1>
+                            <h1 className="font-semibold text-white text-lg">Description</h1>
                         </div>
                         <div className="p-5">
-                            <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">{Math.min(FacebookDescriptionPost, 63206)}/63206</p>
+                            <p className="font-semibold text-white bg-black p-2 text-sm w-17 text-center rounded-xl">{Math.min(FacebookDescriptionPost, 63206)}/63206</p>
                         </div>
 </div>
 
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Bio</h1>
+                            <h1 className="font-semibold text-white text-lg">Bio</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm text-sm w-15 text-center rounded-xl">{Math.min(FacebookBio,101)}/101</p>

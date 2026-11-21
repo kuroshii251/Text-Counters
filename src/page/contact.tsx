@@ -6,12 +6,8 @@ export default function ContactPage(){
     return (
         <>
         <Navbars/>
-
         <Contact/>
-
         <Footer/>
-        
-        
         </>
     )
 }

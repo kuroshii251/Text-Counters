@@ -26,40 +26,40 @@ export default function SocialMediaCounter(){
 
     return (
         <>
-        <div className="flex flex-col justify-center  items-center bg-slate-200 min-h-screen p-3">
+        <div className="flex flex-col justify-center  items-center min-h-screen p-3">
             <div className="p-3">
 
-                <h1 className="font-extrabold text-4xl text-center">Social Media Counter</h1>
+                <h1 className="font-extrabold text-4xl text-center text-white">Social Media Counter</h1>
             </div>
             <div className="">
                 <div className="col space-y-7">
-                    <div className="bg-white w-120 h-40 rounded-xl p-4">
+                    <div className=" w-120 h-40 rounded-xl p-4">
                         <div className="flex flex-wrap gap-5 justify-center">
-                      <button onClick={() => handleTabs(0)} className="font-semibold cursor-pointer bg-black rounded-xl text-white p-3">Pinterest</button>
-                 <button onClick={() => handleTabs(1)} className="font-semibold cursor-pointer bg-black rounded-xl text-white p-3">Instagram</button>
-                            <button onClick={() => handleTabs(2)} className="font-semibold bg-black rounded-xl cursor-pointer    text-white p-3 w-20">X</button>
-                            <button onClick={() => handleTabs(3)} className="font-semibold bg-black rounded-xl cursor-pointer text-white p-3">TikTok</button>
-                            <button onClick={() => handleTabs(4)} className="font-semibold bg-black rounded-xl cursor-pointer text-white p-3">Threads</button>
-                             <button onClick={() => handleTabs(5)} className="font-semibold bg-black rounded-xl cursor-pointer text-white p-3">Facebook</button>
-                            <button onClick={() => handleTabs(6)} className="font-semibold bg-black rounded-xl  cursor-pointer text-white p-3">Youtube</button>
+                      <button onClick={() => handleTabs(0)} className="font-semibold cursor-pointer bg-zinc-900 rounded-xl text-white p-3">Pinterest</button>
+                 <button onClick={() => handleTabs(1)} className="font-semibold cursor-pointer bg-zinc-900 rounded-xl text-white p-3">Instagram</button>
+                            <button onClick={() => handleTabs(2)} className="font-semibold bg-zinc-900 rounded-xl cursor-pointer    text-white p-3 w-20">X</button>
+                            <button onClick={() => handleTabs(3)} className="font-semibold bg-zinc-900 rounded-xl cursor-pointer text-white p-3">TikTok</button>
+                            <button onClick={() => handleTabs(4)} className="font-semibold bg-zinc-900 rounded-xl cursor-pointer text-white p-3">Threads</button>
+                             <button onClick={() => handleTabs(5)} className="font-semibold bg-zinc-900 rounded-xl cursor-pointer text-white p-3">Facebook</button>
+                            <button onClick={() => handleTabs(6)} className="font-semibold bg-zinc-900 rounded-xl  cursor-pointer text-white p-3">Youtube</button>
 
                         </div>
 
                     </div>
 
                     <div className="h-auto bg-white w-120 rounded-xl ">
-                        <textarea name="" onChange={(e) => setSocialMedia(e.target.value)} className="resize-none h-100 rounded-xl w-120 p-3" id="" placeholder="Type your word here..."></textarea>
+                        <textarea name="" onChange={(e) => setSocialMedia(e.target.value)} className="resize-none h-100 bg-zinc-950 rounded-xl w-120 p-5 bg-black text-white border-2 border-gray-500" id="" placeholder="Type your word here..."></textarea>
 
                     </div>
 
-                    <div className={`${tabs === 0 ? "block": "hidden"} bg-white h-100 rounded-xl h-auto`}>
+                    <div className={`${tabs === 0 ? "block": "hidden"} bg-zinc-950  border-2 border-gray-500 h-100 rounded-xl h-auto`}>
                             <div className="p-5">
-<h1 className="font-bold text-center text-2xl">Pinterest</h1>
+<h1 className="font-bold text-center text-2xl text-white">Pinterest</h1>
                             </div>
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Username</h1>
+                            <h1 className="font-semibold text-lg text-white">Username</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">{Math.min(usernameCount, 30)}/30</p>
@@ -67,7 +67,7 @@ export default function SocialMediaCounter(){
 </div>
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Alt Text</h1>
+                            <h1 className="font-semibold text-white text-lg">Alt Text</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">{Math.min(altTextCount,500)}/500</p>
@@ -75,7 +75,7 @@ export default function SocialMediaCounter(){
 </div>
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Comments</h1>
+                            <h1 className="font-semibold text-white text-lg">Comments</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">
@@ -85,7 +85,7 @@ export default function SocialMediaCounter(){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Post Description</h1>
+                            <h1 className="font-semibold text-white text-lg">Post Description</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">{Math.min(postDescriptionCount, 500)}/500</p>
@@ -94,7 +94,7 @@ export default function SocialMediaCounter(){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Post Title</h1>
+                            <h1 className="font-semibold  text-white text-lg">Post Title</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm text-sm w-15 text-center rounded-xl">{Math.min(postTitleCount,100)}/100</p>
@@ -103,7 +103,7 @@ export default function SocialMediaCounter(){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Bio</h1>
+                            <h1 className="font-semibold text-white text-lg">Bio</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm text-sm w-15 text-center rounded-xl">{Math.min(bioCount,160)}/160</p>

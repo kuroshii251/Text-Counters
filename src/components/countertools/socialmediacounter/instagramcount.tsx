@@ -7,13 +7,13 @@ export default function InstagramCount({tabs, socialmedia}){
     return (
         <>
 
-           <div className={`${tabs === 1 ? "block": "hidden"} bg-white h-100 rounded-xl h-auto`}>
+           <div className={`${tabs === 1 ? "block": "hidden"} bg-zinc-950  border-2 border-gray-500 h-100 rounded-xl h-auto`}>
                             <div className="p-5">
-<h1 className="font-bold text-center text-2xl">Instagram</h1>
+<h1 className="font-bold text-center text-2xl text-white">Instagram</h1>
                             </div>
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Username</h1>
+                            <h1 className="font-semibold text-lg text-white">Username</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">{Math.min(usernameInstagramCount, 30)}/30</p>
@@ -22,7 +22,7 @@ export default function InstagramCount({tabs, socialmedia}){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Comments</h1>
+                            <h1 className="font-semibold text-lg text-white">Comments</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">
@@ -32,7 +32,7 @@ export default function InstagramCount({tabs, socialmedia}){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Description</h1>
+                            <h1 className="font-semibold text-lg text-white">Description</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm w-15 text-center rounded-xl">{Math.min(DescriptionInstagramCount, 500)}/500</p>
@@ -41,7 +41,7 @@ export default function InstagramCount({tabs, socialmedia}){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Caption</h1>
+                            <h1 className="font-semibold text-lg text-white">Caption</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm text-sm w-15 text-center rounded-xl">{Math.min(captionInstagramCount,100)}/100</p>
@@ -50,7 +50,7 @@ export default function InstagramCount({tabs, socialmedia}){
 
 <div className="flex justify-between">
   <div className="p-5">
-                            <h1 className="font-semibold text-lg">Bio</h1>
+                            <h1 className="font-semibold text-lg text-white">Bio</h1>
                         </div>
                         <div className="p-5">
                             <p className="font-semibold text-white bg-black p-2 text-sm text-sm w-15 text-center rounded-xl">{Math.min(bioInstagramCount,160)}/160</p>

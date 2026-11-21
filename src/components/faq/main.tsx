@@ -18,7 +18,7 @@ export default function Faq(){
 
          {
             id:3,
-            quest:"How do I input the text?",
+            quest:"How to use Text Counters?",
             ans:"Type or paste your text into the input field, and the result will show up instantly"
         },
     ]
@@ -28,25 +28,29 @@ export default function Faq(){
     }
     return (
         <>
-        <div className="flex flex-col justify-center items-center min-h-screen bg-slate-200">
-            <h1 className="text-5xl font-bold">FAQ</h1>
-            <p className="text-xl font-semibold">Frequently ask Question</p>
+        <div className="flex flex-col justify-center items-center min-h-screen ">
+            <h1 className="text-5xl font-bold text-white">FAQ</h1>
+            <p className="text-xl font-semibold text-white">Frequently ask Question</p>
             <div className="pt-10">
-     <div className="w-150 bg-white rounded-md ">
+     <div className="lg:w-150 w-120 bg-zinc-900 rounded-md ">
                 {dataFaq.map((data) => (
   <div className="p-5 border-b-1 border-grey" key={data.id}>
     <div className="flex justify-between ">
         <div className="">
-  <h1 className="font-semibold text-xl">{data.quest}</h1>
+  <h1 className="font-semibold text-xl text-white">{data.quest}</h1>
         </div>
   <button className="flex flex-col justify-end items-end cursor-pointer" onClick={() => handleFaq(data.id)}>
-<i className="fa-solid fa-plus"></i>  
+    {openFaq === data.id ? (
+                <i className="fa-solid fa-minus text-white"></i>  
+
+    ): (
+        <i className="fa-solid fa-plus text-white"></i>  
+
+    ) }
 </button>
     </div> 
-
-
-                    <div className={`${openFaq === data.id ? "flex": "hidden"} mt-3`}>
-                        <p className="text-md font-semibold">{data.ans}</p>
+                    <div className={`${openFaq === data.id ? "flex": "hidden"}  mt-3`}>
+                        <p className="text-md font-semibold text-white">{data.ans}</p>
                     </div>
                 </div>
                 ))}
