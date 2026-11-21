@@ -6,7 +6,7 @@
 
 # What is Text Counters?
 
-Text counter is the website where you can find out the number of words you have typed or pasted into the input field
+Text counter is the website where you can find out the number of words you have typed or pasted into the input field. There's 3 Counter tools, such as Word Counter, Social Media Counter, and Game Counter.
 
 # Demo
 
