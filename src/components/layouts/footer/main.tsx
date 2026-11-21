@@ -13,13 +13,13 @@ export default function Footer(){
                 <a href="/" className="font-semibold text-white">Home</a>
                 </div>
                 <div className="">
-                <a href="/wordcounter" className="font-semibold text-white">Word Counter</a>
+                <a href="/word-counter" className="font-semibold text-white">Word Counter</a>
                 </div>
                 <div className="">
-                <a href="/socialmediacounter" className="font-semibold text-white">Social Media Counter</a>
+                <a href="/socialmedia-counter" className="font-semibold text-white">Social Media Counter</a>
                 </div>
                 <div className="">
-                <a href="/gamescounter" className="font-semibold text-white">Games Counter</a>
+                <a href="/game-counter" className="font-semibold text-white">Games Counter</a>
                 </div>
                 <div className="">
                 <a href="/contact" className="font-semibold text-white">Contact</a>

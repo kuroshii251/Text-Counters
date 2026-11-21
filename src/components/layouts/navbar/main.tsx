@@ -11,7 +11,7 @@ export default function Navbars(){
                 <a href="/word-counter" className="font-semibold text-lg">Word Counter</a>
 
                 </div>
-                <div className="/socialmediacounter">
+                <div className="/socialmedia-counter">
                     <a href="/socialmedia-counter" className="font-semibold text-lg">Social Media Counter</a>
                 </div>
                 <div className="">

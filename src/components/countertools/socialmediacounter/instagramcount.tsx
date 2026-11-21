@@ -7,11 +7,10 @@ export default function InstagramCount({tabs, socialmedia}){
     return (
         <>
 
-             <div className={`${tabs === 1 ? "block": "hidden"} bg-white h-100 rounded-xl h-auto`}>
+           <div className={`${tabs === 1 ? "block": "hidden"} bg-white h-100 rounded-xl h-auto`}>
                             <div className="p-5">
 <h1 className="font-bold text-center text-2xl">Instagram</h1>
                             </div>
-
 <div className="flex justify-between">
   <div className="p-5">
                             <h1 className="font-semibold text-lg">Username</h1>
