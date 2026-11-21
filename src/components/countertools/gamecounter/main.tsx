@@ -19,7 +19,7 @@ export default function GameCounters(){
             </div>
             <div className="space-y-3  lg:grid grid-cols-2 gap-4">
                 <div className="bg-white h-120 w-120 rounded-xl">
-                    <textarea onChange={(e) => setUsername(e.target.value)} className="resize-none bg-zinc-950 border-2 border-gray-700 text-white p-5 h-120 rounded-xl w-120" placeholder="Type your username here..."/>
+                    <textarea onChange={(e) => setUsername(e.target.value)} className="resize-none bg-zinc-950 border-2 border-gray-700 text-white p-5 h-120 rounded-xl w-120" placeholder="Type or paste your text here..."/>
                 </div>
 
                 <div className="bg-zinc-950 border-2 border-gray-700 p-5 lg:mb-0 mb-10 w-120 h-120 rounded-xl  ">

@@ -48,7 +48,7 @@ export default function SocialMediaCounter(){
                     </div>
 
                     <div className="h-auto bg-white w-120 rounded-xl ">
-                        <textarea name="" onChange={(e) => setSocialMedia(e.target.value)} className="resize-none h-100 bg-zinc-950 rounded-xl w-120 p-5 bg-black text-white border-2 border-gray-500" id="" placeholder="Type your word here..."></textarea>
+                        <textarea name="" onChange={(e) => setSocialMedia(e.target.value)} className="resize-none h-100 bg-zinc-950 rounded-xl w-120 p-5 bg-black text-white border-2 border-gray-500" id="" placeholder="Type or paste your text here..."></textarea>
 
                     </div>
 

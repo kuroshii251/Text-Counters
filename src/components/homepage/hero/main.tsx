@@ -3,7 +3,7 @@ import heroimage from "../../../assets/heroimage.png"
 export default function Hero(){
     return (
         <>
-        <div className="flex flex-col justify-center items-center lg:min-h-screen h-200">
+        <div className="flex flex-col justify-center items-center lg:h-150 h-250">
             <div className="grid lg:grid-cols-2 lg:justify-center lg:place-items-center">
                 <div className="flex flex-col space-y-5 lg:justify-start lg:items-start justify-center items-center ">
   <h1 className="font-bold text-5xl w-120 lg:text-start text-center text-white">Count Your Words in a Seconds</h1>

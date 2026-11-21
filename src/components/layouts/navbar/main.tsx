@@ -4,7 +4,7 @@ export default function Navbars(){
     const [navbarhamburger,setNavbarHamburger] = useState(false);
     return (
         <>   
-            <div className="flex lg:flex-grow flex-wrap gap-5   items-center p-5">
+            <div className="flex lg:flex-grow flex-wrap gap-5   items-center p-4">
                 <div className="">
                 <a href="/" className="font-bold text-2xl text-white">Text Counter</a>
                 </div>                                

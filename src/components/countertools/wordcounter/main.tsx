@@ -6,7 +6,7 @@ export default function WordCounter(){
     const AlphabetCounts = texts.match(/[a-zA-Z]/g)?.length || 0;
     const spaceCounts = texts.match(/\s/g)?.length || 0;
     const numberCounts = texts.match(/[0-9]/g)?.length || 0;
-    
+
     const sentencesCounts = texts.match(/[^.,?!]+[.,?!]+\s*/g)?.length || 0;
     const paragraphCounts = texts.match(/^(.+?)(\n\s*\n|$)/gm)?.length || 0;
     const characterCounts = texts.match(/./gs)?.length || 0;
@@ -20,7 +20,7 @@ export default function WordCounter(){
             </div>
             <div className="lg:flex gap-4 mx-auto justify-center p-3  place-items-center pb-10 ">
                 <div className=" rounded-l-xl lg:rounded-r-none rounded-r-xl  w-120 ">
-                    <textarea onChange={(e) => setTexts(e.target.value)} className="h-120 p-4 rounded-xl w-120 bg-zinc-950 border-2 border-gray-700 text-white resize-none  " placeholder="Input your text here..."/>
+                    <textarea onChange={(e) => setTexts(e.target.value)} className="h-120 p-4 rounded-xl w-120 bg-zinc-950 border-2 border-gray-700 text-white resize-none  " placeholder="Type or paste your text here..."/>
                 </div>
 
                   <div className="h-120 p-4 border-2 border-zinc-700 rounded-xl lg:mt-0 mt-5  w-120 scroll-smooth overflow-auto h-100 ">
